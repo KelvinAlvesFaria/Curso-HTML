@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div.a{
+            display: inline-block; /* Deixa as coisas enfileiradas */
+            background-color: rgb(98, 151, 230);
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div.a:hover{
+            background-color: aquamarine;
+        }
+
+        h1#mundo{
+            background-color: rgb(90, 204, 233);
+            text-indent: 40px; /* Espaço de início de parágrado */
+        }
+
+        h1#egg{
+            display: none;
+            background-color: brown;
+            text-indent: 40px; /* Espaço de início de parágrado */
+        }
+
+        div#b:hover > h1#egg{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="a">01</div>
+    <div class="a">02</div>
+    <div class="a">03</div>
+    <div id="b">
+        <h1 id="mundo">Olá Mundo</h1>
+        <h1 id="egg">Easter Egg</h1>
+    </div>
+</body>
+</html>

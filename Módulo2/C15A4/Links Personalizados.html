@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Personalizados</title>
+    <style>
+        li{
+            font-size: 50px;
+            color: blueviolet;
+        }
+
+        a{
+            color: purple;
+            text-decoration: none; /* tira o sublinhado padrão dos links */
+            font-weight: bold; /* negrito */
+        }
+
+        a:visited{ /* Características que são aplicadas caso você já tenha acessado o link anteriormente */
+            color: rgb(79, 38, 117);
+        }
+
+        a:active{ /* No momento que clica a colo muda */
+            color: red;
+        }
+
+        a::after{
+            content: ' [link]';
+            color: rgb(27, 87, 87);
+        }
+
+        a#b::before{
+            content: '=> ';
+            background-color: rgb(181, 181, 224);
+        }
+
+        a:hover{
+            color: brown;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links Personalizados</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/channel/UCyqZ7G8CjMZqPCIWdadqqfA">Vírus</a></li>
+        <li><a id="b" href="https://br.pinterest.com/">100% de Grátis</a></li>
+        <li><a href="https://bdocodex.com/pt/knowledge/">Sem Frete</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, orange 20%, rgb(216, 253, 2), orange); 
+}
+
+main{
+    background-color: rgb(248, 193, 75);
+    width: 600px; /* tamanho da caixa */
+    padding: 20px;
+    margin: auto; /* deixa o conteudo centralizado no meio do site mesmo se diminuir a tela */
+    border-radius: 20px; /* deixa a borda redondinha */
+    box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.459);
+}
+
+h1{
+    background-image: linear-gradient(to right, orange , rgb(101, 13, 109), orange); 
+    border-radius: 10px;
+    color: rgb(136, 0, 0);
+}
+
+p{
+    text-align: justify;
+}

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(77, 219, 77);
+}
+
+h1#verde{ /* ID */
+    text-align: center;
+    background-color: rgb(25, 162, 216);
+    color: rgb(3, 82, 16);
+}
+
+h1.oi{ /* CLASSE */
+    color: rgb(12, 59, 37);
+}
+
+h1.xau{
+    text-decoration: underline;
+}
+
+p{
+    color: rgb(10, 58, 10);
+}

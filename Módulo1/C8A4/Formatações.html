@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatações</title>
+</head>
+<body>
+    <h1>Se liga no código do pai</h1>
+    <pre> <!-- O "pre" deixa as formatações do exato jeito que são escritas, incluindo o esaçamento entre as linhas -->
+        <code>
+            num = int(input('Digite um Número'))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR')
+            else:
+                print(f'O número {num} é IMPAR')
+            print('Fim de programa')
+        </code>
+    </pre>
+    <p>Dá pra usar <q>aspas</q> usando &lt;q&gt; e &lt;/q&gt; para citações.</p>
+    <p>Mas também dá pra só colocar " " ou ' ' .</p>
+
+    <blockquote cite="https://br.pinterest.com/"> <!-- para fazer citações -->
+        Sua mãe é minha
+    </blockquote>
+
+    <p>
+        Estou enrrolando 
+        <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, 
+        ahhhhh... e como amo isso. Acho que vou ficar de <abbr title="Putaria Desenfreada">PD</abbr>
+    </p>
+    <p>
+        TUDO AO CONTRÁRIO:<br>
+        <bdo dir="rtl">Bora de Reverse?</bdo>
+        <bdo dir="lrt"><strong>Bora de Reverse?</strong></bdo>
+    </p>
+</body>
+</html>

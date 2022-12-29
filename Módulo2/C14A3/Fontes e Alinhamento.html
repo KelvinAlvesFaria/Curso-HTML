@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <style>
+
+        /* Importando INTERNAMENTE uma fonte */
+        @font-face {
+            font-family: 'CAOS';
+            src: url('Nowharehouse.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        } /* tipos de format(): opentype(otf), truetype(ttf), embedded-oppentype, truetype-aat(Apple Advanced Typography), svg */
+
+        /* Importnado EXTERNAMENTE uma fonte */
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap');
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px; /* o tamanho Normal é 16px ou 1em */
+            font-style: italic;
+            text-decoration: underline;
+            text-align: justify;
+            text-indent: 40px; /* Espaço de início de parágrado */
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            font-size: 30px;
+            text-align: left;
+        }
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: normal;
+            font-size: 30px;
+            text-align: right;
+        }
+        h3{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+        }
+        h4{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 30px;
+        }    
+        h5{
+            font-family: 'Libre Barcode 39 Extended Text', cursive;
+            font-size: 30px;
+        }
+        h6{
+            font-family: 'CAOS';
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes (lighter)</h1>
+    <h2>Trabalhando com Fontes (normal)</h2>
+    <h3>Trabalhando com Fontes (bold)</h3>
+    <h4>Trabalhando com Fontes (bolder)</h4>
+    <h5>FONTE EXPORTADA</h5>
+    <h6>FONTE BAIXADA E IMPORTADA</h6>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente maxime omnis veritatis dignissimos, 
+    atque rerum architecto blanditiis? Blanditiis voluptas, error dolores ullam vel excepturi quasi officiis 
+    eum deserunt? Repellat, natus!</p>
+</body>
+</html>

@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'CAOS';
+    src: url('Nowharehouse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: rgb(207, 209, 55);
+}
+
+header{
+    background-image: linear-gradient(rgb(41, 209, 41), rgb(2, 63, 7)); 
+    margin: -8px;
+    margin-top: -22px;
+
+}
+
+header > h1{
+    padding: 40px 0px 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.527);
+}
+header > h2{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 800px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.527);
+    padding-bottom: 30px;
+}
+nav{
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+nav > a{
+    color: rgb(136, 235, 136);
+    text-decoration: none;
+    margin: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.527);
+    
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: rgb(250, 250, 250);
+    margin: -20px 100px 0px 100px;
+    box-shadow: 3px 3px 3px black;
+}
+
+main > h1{
+    padding: 10px 0px 0px 20px;
+    font-family: 'CAOS';
+}
+
+main > p{
+    text-indent: 20px;
+    padding: 0px 20px;
+    text-align: justify;
+}
+
+main > h2{
+    font-family: 'CAOS';
+    margin: 15px;
+    padding: 10px 0px 0px 5px;
+    background-image: linear-gradient(to right, rgb(41, 209, 41), rgb(255, 255, 255)); 
+}
+
+main > img{
+    margin-left: 20px;
+    margin: 0px 160px 10px 160px;
+}
+
+section{
+    background-color: rgb(6, 54, 2);
+    margin: 0px 100px 0px 100px;
+    box-shadow: 3px 1px 3px black;
+}
+
+section > iframe{
+    margin: 15px 110px 10px 110px;
+}
+
+article{
+    background-color: white;
+    margin: -19px 100px 0px 100px;
+}
+
+div#externo{
+    margin: 0px 100px 0px 100px;
+    padding-top: 350px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 1px 3px black;
+    text-indent: 40px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+div#externo > p{
+    padding: 15px;
+}
+
+div#interno{
+    background-color: green;
+    margin: -370px 150px 0px 150px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div#interno > h2{
+    padding: 10px;
+}
+
+div#interno2{
+    background-color: rgb(129, 245, 129);
+    margin: -20px 150px 0px 150px;
+    text-indent: 40px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+div#interno2 > p#assunto{
+    padding: 10px;
+}
+
+pre > code{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer{
+    margin: 100px -8px -15px -8px;
+    background-color: rgb(6, 54, 2);
+}
+
+footer > p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: white;
+}
