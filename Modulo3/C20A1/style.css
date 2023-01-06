@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 0.5em;
+    text-indent: 30px;
+    font-size: 50px;
+}
+
+header{
+    background-color: black;
+    margin: -22px -8px 0px -8px;
+    padding: 20px 0px 20px 0px;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+header > p{
+    text-indent: 0px;
+}
+
+div#pt1{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+div#pt2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(imagens/pattern004.png);
+    margin: 0px -8px 0px -8px;
+    background-attachment: fixed; /* Mesmo rolando o scroll, o background continua acompanhando */
+}
+
+div#pt3{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+div#pt4{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(imagens/pattern002.png);
+    margin: 0px -8px 0px -8px;
+    background-attachment: fixed; /* Mesmo rolando o scroll, o background continua acompanhando */
+}
+
+footer{
+    padding: 5px;
+    margin: 0px -8px -8px -8px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
