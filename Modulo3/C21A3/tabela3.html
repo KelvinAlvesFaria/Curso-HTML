@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: grey;
+            color: white;
+        }
+
+        thead > tr > th{ /* Serve para grudar o header da tabela aos dados da tabela conforme o scroll */
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        /* Todo "tr" dentro de "tbody" de 2 em 2 linhas */
+        /* "2n" pode ser substituido por odd(ímpar), even(par) ou 2n-1 */
+        tbody > tr:nth-child(2n) { 
+            background-color: lightgray;
+        }
+
+        .numero{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeira tabela</h1>
+    <!--
+        Hierarquia de Tabelas
+        Table = tabela
+            Table ROW = linha de tabela
+                Table Header = cabeçalho de tabela
+                Table Data = dado de tabela
+
+        Anatomia para Tabelas Grandes
+        Table
+            Caption = Título/Legenda da Tabela
+            Thead
+                TE, TD, TH
+            Tbody
+                TR, TD, TH
+            Tfoot
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População Federativa</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> <!-- scope="col" = avisa aos mecanismos de busca que se trata de uma linha vertical-->
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 293 567</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">5 919 049</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">4 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">3 919 049</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">2 919 049</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">1 919 049</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">919 049</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th> <!-- scope="row" = avisa aos mecanismos de busca que se trata de uma linha horizontal-->
+                <td scope="row "class="numero">Muitos</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+        
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+        
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+        
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+            
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+        
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+        
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+        
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+            
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident eius animi 
+    consequuntur sit natus nobis voluptates eveniet iusto, ducimus rerum ipsa ad, corrupti 
+    ullam tenetur vero nulla. Facilis, iure.</p>
+</body>
+</html>
