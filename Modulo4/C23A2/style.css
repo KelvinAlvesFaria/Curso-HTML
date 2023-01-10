@@ -12,20 +12,27 @@ html, body{
     background-color: black;
 }
 
+body{
+    background: url('pacote-d013/imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+
 main{
     position: relative;
     height: 100vh;
-    background-color: green;
 }
 
 section#telefone{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-25%, -50%);
 
-    height: 627px;
-    width: 311px;
-    background-color: blue;
-    background: url('pacote-d013/imagens/frame-iphone.png');
+    min-height: 100vh;
+    min-width: 100vh;
+    background-size: contain;
+
+    background: url('pacote-d013/imagens/frame-iphone.png') no-repeat;
+    
 }
