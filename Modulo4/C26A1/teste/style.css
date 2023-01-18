@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+img{
+    width: 50vw;
+    border-radius: 18px 18px 0px 0px;
+}
+
+body{
+    background-color: rgb(86, 22, 99);
+}
+
+main{
+    background-color: white;
+    width: 50vw;
+    margin: auto;
+    border-radius: 20px;
+}
+
+h1{
+    text-align: center;
+    margin: 5px 0px 0px 0px;
+}
+
+p.welcome{
+    padding: 0px 10px;
+    text-align: justify;
+    margin-bottom: 0px;
+}
+
+p.dados{
+    margin-top: 0px;
+}
+
+fieldset{
+    border: none;
+    padding: 10px;
+}
+
+fieldset > p{
+    padding-top: 0px;
+    background-color: rgb(86, 22, 99);
+    border-radius: 5px;
+    display: block;
+}
+
+input{
+    padding: auto;
+    border-radius: 5px;
+    width: 83%;
+}
+
+span{
+    color: white;
+}

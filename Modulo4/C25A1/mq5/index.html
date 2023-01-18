@@ -7,8 +7,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i> <!-- Ícone de Menu -->
@@ -75,7 +76,7 @@
             Nesciunt consectetur laudantium libero dignissimos unde 
             perferendis ea quo optio ipsam minus tempora cumque nostrum, 
             porro, quasi inventore exercitationem blanditiis sunt quae!</p>
-            
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Nesciunt consectetur laudantium libero dignissimos unde 
             perferendis ea quo optio ipsam minus tempora cumque nostrum, 
@@ -101,6 +102,14 @@
                 itens.style.display = 'none' 
             }else{
                 itens.style.display = 'block' 
+            }
+        }
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 769){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
             }
         }
     </script>
