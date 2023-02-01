@@ -10,7 +10,7 @@
 
 @media screen and (min-width: 769px){
     i#burguer{
-        display: none;
+        display: none; /* Desaparece com o ícone de menu */
     }
 
     menu{
@@ -18,7 +18,7 @@
     }
 
     menu > ul > li{
-        display: inline-block;
+        display: inline-block; /* Deixa as opções do menu enfileiradas horizontalmente */
     }
 
     main{
